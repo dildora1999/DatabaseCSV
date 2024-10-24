@@ -19,17 +19,17 @@
 @(Html
 .Grid(Model)
 .Build(columns => {
-columns.Add(model => model.Payroll_Number).Titled("Payroll Number");
+columns.Add(model => model.PayrollNumber).Titled("Payroll Number");
 columns.Add(model => model.Forename).Titled("Forename");
 columns.Add(model => model.Surname).Titled("Surname");
-columns.Add(model => model.Date_of_Birth).Titled("Date of Birth").Formatted("{0:d}");
+columns.Add(model => model.DateOfBirth).Titled("Date of Birth").Formatted("{0:d}");
 columns.Add(model => model.Telephone).Titled("Telephone");
 columns.Add(model => model.Mobile).Titled("Mobile");
 columns.Add(model => model.Address).Titled("Address");
-columns.Add(model => model.Address_2).Titled("Address 2");
+columns.Add(model => model.Address2).Titled("Address 2");
 columns.Add(model => model.PostCode).Titled("Postcode");
-columns.Add(model => model.EMail_Home).Titled("Email");
-columns.Add(model => model.Start_Date).Titled("Start Date").Formatted("{0:d}");
+columns.Add(model => model.EmailHome).Titled("Email");
+columns.Add(model => model.StartDate).Titled("Start Date").Formatted("{0:d}");
 })
 .Filterable(GridFilterCase.Lower)
 .Using(GridFilterMode.Header)

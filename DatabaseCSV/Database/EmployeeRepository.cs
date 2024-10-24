@@ -11,7 +11,7 @@ public class EmployeeRepository (EmployeeDbContext employeeDbContext) : IEmploye
         await employeeDbContext.Database.EnsureCreatedAsync();
 
         var newEmployees = employees
-            .Where(e => employeeDbContext.Employees.Find(e.Payroll_Number) == null)
+            .Where(e => employeeDbContext.Employees.Find(e.PayrollNumber) == null)
             .ToList();
 
         if (newEmployees.Any()) {

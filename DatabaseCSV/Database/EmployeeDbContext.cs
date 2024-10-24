@@ -15,7 +15,7 @@ public class EmployeeDbContext(DbContextOptions<EmployeeDbContext> options) : Db
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Employee>(entity => {
-            entity.HasKey(e => e.Payroll_Number);
+            entity.HasKey(e => e.PayrollNumber);
         });
     }
 }
