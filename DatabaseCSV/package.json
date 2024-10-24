@@ -1,0 +1,13 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "something",
+  "main": "index.js",
+  "author": "dildora1999",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
