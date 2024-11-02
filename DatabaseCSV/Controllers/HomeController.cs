@@ -21,8 +21,7 @@ public class HomeController(IEmployeeRepository employeeRepository, ICsvService 
         }
         var records = csvService.GetRecords(csvFile);
         await employeeRepository.AddEmployeesAsync(records);
-            
-        ViewBag.Message = $"{records.Count} rows successfully imported.";
+        
         return RedirectToAction("Index");
     }
 
